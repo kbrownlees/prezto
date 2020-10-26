@@ -11,3 +11,16 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+export GIT_EDITOR=vim
+export EDITOR=vim
+
+export PATH="$PATH:./node_modules/.bin"
+
+export VIRTUALENVWRAPPER_PYTHON=$(command -v python3)
+
+[ -r "/usr/local/opt/node@10/bin" ] && PATH="/usr/local/opt/node@10/bin:$PATH"
+#[ -r "/usr/local/opt/node@12/bin" ] && PATH="/usr/local/opt/node@12/bin:$PATH"
+
+[ -r ~/Library/Android/sdk/platform-tools ] && PATH=~/Library/Android/sdk/platform-tools:$PATH
+[ -r "/usr/local/opt/postgresql@11/bin" ] && PATH=/usr/local/opt/postgresql@11/bin/:$PATH
+

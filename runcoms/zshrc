@@ -24,3 +24,7 @@ export VIRTUALENVWRAPPER_PYTHON=$(command -v python3)
 [ -r ~/Library/Android/sdk/platform-tools ] && PATH=~/Library/Android/sdk/platform-tools:$PATH
 [ -r "/usr/local/opt/postgresql@11/bin" ] && PATH=/usr/local/opt/postgresql@11/bin/:$PATH
 
+# https://superuser.com/questions/1087289/disable-zsh-prezto-completion-module-autocorrect
+unsetopt correct
+unsetopt correctall
+DISABLE_CORRECTION="true"
